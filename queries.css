@@ -1,0 +1,362 @@
+/* Media */
+/***********************************************/
+/* Below - 1350px / 16px = 84 (smaller-desktop)*/
+/***********************************************/
+@media (max-width: 84em) {
+    /* hero section */
+    .hero-text h1{
+        font-size: 2.2rem;
+        margin-bottom: 0.4rem;
+    
+    }
+    /* .hero-text{
+        padding: 1.5rem;
+        margin-bottom: 10px;
+    } */
+    .hero-banner img{
+        width: 480px;
+    }
+    .hero-text p{
+        font-size: 1.2rem;
+        margin-bottom: 0.4rem;
+    }
+    .hero-text button{
+        font-size: 1rem;
+    }
+    .hero-text button{
+        border: none;
+        font-size: 1rem;
+        padding: 0.9rem 1.3rem;
+        color: white;
+        letter-spacing: 1px;
+        background-color: #095199;
+        border-radius: 1.6rem;
+        transition: all 0.3s;
+    }
+    /* tv section */
+    .tv-container .details{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .tv-container .details h1{
+        font-size: 2.2rem;
+        margin-bottom: 1.2rem;
+    }
+    .tv-container .desc{
+        font-size: 1rem;
+        margin-bottom: 1.2rem;
+
+    }
+    .price{
+        font-size: 0.9rem;
+
+    }
+    .subscription{
+        
+        padding: 0.8rem 4rem;
+        
+    }
+    .product-desc h1{   
+        font-size: 5rem;
+        margin-bottom: 10px;  
+    }
+    .product-desc p{
+        font-size: 1.1rem;
+       
+    }
+    .footer-grid{
+        
+        padding: 0 2rem;
+        /* background-color: red; */
+        gap: 20px;
+    
+    }
+    .footer{
+        padding: 3rem 6rem 1rem 6rem;
+        background-color: #333433;
+        color: #ddd;
+    
+    }
+    .footer{
+        padding: 30px 35px;
+
+    }
+
+
+}
+
+/***********************************************/
+/* Below - 1200px / 16px = 75 (Landscape Tablets)*/
+/***********************************************/
+/* @media (max-width: 75em) {
+   
+
+} */
+
+/***********************************************/
+/* Below - 940px / 16px = 58.75 ( Tablets)*/
+/***********************************************/
+@media (max-width: 59em) {
+
+    /* header */
+    .nav-links{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        padding: 0.5rem;
+        display: none;
+    }
+    .nav-links.active{
+        display: flex;
+    }
+    .menu-toggle{
+        display: block;
+        padding:  0.5rem;
+        background-color:#444544 ;
+    }
+    .hero-container{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    
+    .hero-banner img{
+        width: 400px;
+    }
+    .hero-text{
+        text-align: center;
+    }
+    .hero-text h1{
+        font-size: 2rem;
+    }
+    .hero-text p{
+        font-size: 1.2rem;
+       
+    }
+    .primary,.secondary{
+        
+        padding: 0.6rem 1rem;
+    }
+    .hero{
+        background-color: rgb(10, 10, 10);
+        padding: 5.2rem 2.4rem;
+    }
+    .product-title{
+        font-size: 1.6rem;
+        font-weight: 600;
+        text-shadow: 1px 1px 10px rgba(0,0,0,0.3);
+    }
+    .products{
+        padding: 3rem 2.5rem;
+        background-color: #f0efef;
+    }
+    .product-title{
+        font-size: 1.8rem;
+        font-weight: 600;
+        text-shadow: 1px 1px 10px rgba(0,0,0,0.3);
+    }
+    .dispcription p:nth-of-type(2){
+        font-size: 1rem;
+        text-align: center;
+    }
+    /* tv section */
+    .tv-container{
+       flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    .apple-tv{
+        padding: 10rem 3.4rem;
+    }
+    .tv-logo{
+        margin-bottom: 2rem;
+    }
+    .tv-container .details h1{
+        font-size: 2.5rem;
+        margin-bottom: 1.1rem;
+    }
+    .tv-container .desc{
+        font-size: 1.1rem;
+    }
+    .subscription{
+        padding: 1rem 5rem;
+       
+    }
+    /* tv product sec*/
+    .tv-section{
+        padding: 5rem 0rem;
+        background-color: rgb(246, 240, 240);
+    }
+    
+    .product-box img{
+        width: 80%;
+        height: 80%;
+        margin-bottom: 1.5rem;
+    }
+    .product-desc h1{   
+        font-size: 3.2rem; 
+    }
+    .product-desc p{
+        font-size: 0.9rem;
+       
+    }
+    .product-box{
+       
+        padding: 1rem 4rem;
+    }
+    .products-container{
+        display: grid;
+        grid-template-columns:1fr;
+        gap: 2rem;
+    }
+/* footer */
+    .footer{
+        padding: 25px 30px;
+        /* background-color: red; */
+    }
+    .footer a,p{
+        font-size: 0.8rem;
+    }
+    .product-img{
+        width: 90%;
+        padding-left: 3.2rem;
+        
+    }
+
+
+}
+
+/***********************************************/
+/* Below - 700px / 16px = 44 (small Tablets)*/
+/***********************************************/
+/* @media (max-width: 44em) {
+    
+} */
+
+/***********************************************/
+/* Below - 550px / 16px = 34 (Phone)*/
+/***********************************************/
+
+@media (max-width: 34em) {
+
+.hero{
+    padding: 40px 20px;
+    
+}
+.hero-container{
+    gap: 2rem;
+}
+.hero-banner img{
+    width: 200px;
+    
+}
+.hero-text h1{
+    font-size:1.8rem ;
+    margin-bottom: 10px;
+}
+.hero-text p{
+    font-size: 16px;
+    margin-bottom: 10px;
+    
+}
+.hero-text button{
+    padding: 0.6rem 1.1rem;
+}
+/* product */
+.product-title{
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+.primary,.secondary{
+    border: none;
+    padding: 0.4rem 1rem;
+    font-size: 0.6rem;
+}
+.product-img{
+    padding: 0px;
+    width: 100%;z-index: 1;
+    
+}
+.dispcription p:nth-of-type(2){
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+
+
+
+/* apple tv */
+.apple-tv{
+    padding: 8rem 1rem;
+}
+.tv-logo{
+    margin-bottom: 2rem;
+    width: 110px;
+}
+.tv-container .details h1{
+    font-size: 1.2rem;
+    margin-bottom: 1.1rem;
+}
+.tv-container .desc{
+    font-size: 0.7rem;
+    text-align: center;
+}
+.subscription{
+    padding: 0.7rem 2.5rem;
+   
+}
+p.price{
+    font-size: 12px;
+}
+/* ṭv product sec */
+.tv-section{
+    padding: 4rem 0rem;
+    
+}
+.product-box img{
+    width: 75%;
+    height: 75%;
+    margin-bottom: 1.5rem;
+}
+.product-desc h1{   
+    font-size: 1.9rem; 
+}
+.product-desc p{
+    font-size: 0.7rem;
+    text-align: justify;
+    line-height: 15px;
+   
+}
+.product-box{
+   
+    padding: 1rem 1rem;
+}
+/* footer */
+.footer-grid{
+    grid-template-columns:repeat(2,1fr);
+}
+.footer-grid .myedit{
+   width: 107px;
+}
+.footer-title{
+    font-size: 15.5px;
+}
+.footer a,p{
+    font-size: 0.6rem;
+}
+.footer-grid{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+
+
+}
+/*  */

@@ -1,0 +1,306 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+
+}
+/* header */
+header{
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+
+}
+/* 16px = 1rem */
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #444544;
+    padding: 0rem 2rem;
+    z-index: 2;
+}
+.nav-links{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1.6rem;
+    background-color: #444544;
+    padding: 1rem;
+    flex-grow: 1;
+    z-index: 2;
+}
+.nav-link a{
+    display: block;
+    color: #c1bdbd;
+    letter-spacing: 1px;
+    text-decoration: none;
+
+}
+.nav-link a:hover{
+    color: white;
+    cursor: pointer;
+    transition: all .3s;
+}
+.menu-toggle{
+    cursor: pointer;
+    display: none;
+   
+}
+.menu{
+    height: 30px;
+    width: 40px;
+    fill: #c1bdbd;
+}
+
+/* hero section */
+.hero{
+    background-color: rgb(10, 10, 10);
+    padding: 3.2rem 2.4rem;
+   
+}
+.hero-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100vh;
+
+}
+.hero-text{
+    color: white;
+    text-align: center;
+    
+    
+}
+.hero-text h1{
+    font-size: 3.2rem;
+    margin-bottom: 0.5rem;
+
+}
+.hero-banner img{
+    width: 600px;
+}
+.hero-text p{
+    font-size: 1.8rem;
+    margin-bottom: 1.4rem;
+}
+.hero-text button{
+    border: none;
+    font-size: 1rem;
+    padding: 1rem 1.4rem;
+    color: white;
+    letter-spacing: 1px;
+    background-color: #095199;
+    border-radius: 1.6rem;
+    transition: all 0.3s;
+}
+.hero-text button:hover{
+    background-color: #0f7ff0;
+    cursor: pointer;
+
+}
+/* products */
+.products{
+    padding: 3.2rem 2.8rem;
+    background-color: #f0efef;
+}
+
+.products-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2.4rem;
+}
+.product-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(247, 247, 247);
+    padding: 2.4rem 1.6rem;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+
+
+}
+.dispcription{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    
+}
+.product-title{
+    font-size: 2rem;
+    font-weight: 600;
+    text-shadow: 1px 1px 10px rgba(0,0,0,0.3);
+}
+
+.primary,.secondary{
+    border: none;
+    padding: 0.8rem 1.2rem;
+    font-size: 1rem;
+    border-radius: 1.6rem;
+    transition: all 0.3s;
+    letter-spacing: 1px;
+
+}
+.primary{
+    color: white;
+    background-color: #095199;
+    margin-right: 0.5rem;
+}
+.primary:hover{
+    cursor: pointer;
+    background-color: #0f7ff0;
+}
+.secondary{
+    color: rgb(4, 160, 4);
+    outline: 2px solid rgb(4, 160, 4);
+    
+}
+.secondary:hover{
+    background-color: rgb(6, 180, 6);
+    color: white;
+    cursor: pointer;
+    outline: none;
+}
+.btn-group{
+    margin-bottom: 1rem;
+
+}
+
+.product-img{
+    width: 100%;
+    transition: all 1s;
+    
+    
+}
+.product-img:hover{
+    transform: scale(1.05);
+    
+    
+}
+/* Tv */
+.apple-tv{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 16rem 3.4rem;
+}
+.tv-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.tv-container .details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.tv-container .details h1{
+    font-size: 2.8rem;
+    margin-bottom: 1.2rem;
+}
+.tv-container .desc{
+    font-size: 1.2rem;
+    margin-bottom: 1.2rem;
+
+}
+.subscription{
+    margin-bottom: 0.6rem;
+    padding: 1rem 6rem;
+    border: none;
+    border-radius: 0.3rem;
+    font-size: 1rem;
+    background-color: white;
+    transition: all 0.3s;
+    letter-spacing: 1px;
+}
+.subscription:hover{
+    background-color: #ccc;
+    cursor: pointer;
+}
+.tv-logo{
+    width: 30%;
+
+}
+.price{
+    color: #0f7ff0;
+}
+/* tv products */
+.tv-section{
+    padding: 8rem 0rem;
+    background-color: rgb(246, 240, 240);
+}
+.product-box img{
+    width: 60%;
+    height: 60%;
+    margin-bottom: 1.5rem;
+}
+.product-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.2rem 8rem;
+}
+.product-desc h1{
+    text-align: center;
+    font-size: 6rem;
+    font-weight: 500;
+    
+}
+.product-desc p{
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #666666;
+}
+
+/* footer */
+.footer{
+    padding: 3.2rem 6.4rem 1rem 6.4rem;
+    background-color: #333433;
+    color: #ddd;
+
+}
+.footer-grid{
+    display: grid;
+    /* background-color: red; */
+    grid-template-columns: repeat(4,1fr);    
+    align-items: start;
+    padding: 0 6rem;
+    justify-items: center;
+    
+
+}
+.footer-title{
+    color: white;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+.footer-card{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: flex-start;
+    gap: 0.4rem;
+    margin-bottom: 1rem;
+}
+.footer-card a{
+    color:#0f7ff0;
+    text-decoration: none;
+    transition: all0.3s;
+}
+.footer-card a:hover{
+    color:#ccc;
+}
+.footer p{
+    margin-top: 1rem;
+    text-align: center;
+}
+
